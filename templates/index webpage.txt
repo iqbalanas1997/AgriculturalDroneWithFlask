@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Saviour Drone</title>
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#"><img style="width: 10px;" src="../assests/dot.png"> Drone</a>
+    <a href="#"><img style="width: 10px;" src="../assests/dot.png"> Sustainability</a>
+    <a href="#"><img style="width: 10px;" src="../assests/dot.png"> Buy Keys</a>
+    <a href="#"><img style="width: 10px;" src="../assests/dot.png"> About Mark</a>
+    <a href="#"><img style="width: 10px;" src="../assests/dot.png"> How to Use Drone</a>
+  </div>
+  <div class="container" id="main">
+    <div class="topbar"><button class="openbtn" onclick="openNav()">?</button></div>
+    <div class="title"><div class="heading ">Saviour<br>Drone</div>
+    <div class="sub">Let's Green The World</div></div>
+
+  <div class="auth">
+    <label class="key-label">Add Product Key</label>
+    <input class="key" type="text" placeholder="XXX - XXX - XXX - XXX">
+    <button class="btn-activate" id="activate" type="button">ACTIVATE</button>
+  </div> 
+
+
+
+
+<div class="footer">
+   <p class="ft">? All Terms and Rights Are Reserved To <a href="#">MARK</a></p>
+</div>
+<img class=" d-curve" src="../assests/down1.png">
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script type="javascript/text" src="../script/app.js"></script>
+  <script>
+
+$(document).ready(function(){
+    // Get value on button click and show alert
+    $("#activate").click(function(){
+        var str = $(".key").val();
+        var pass = "iqbal";
+      if(str == pass)
+        {
+          window.location.href = "/cover?"+pass;
+     
+        }   
+    });
+});
+
+
+
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0"; 
+    }
+
+  
+    </script> 
+
+</body>
+</html>
